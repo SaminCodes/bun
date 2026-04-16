@@ -10,36 +10,83 @@
         theme: {
           extend: {
             colors: {
-              background: '#0f0f0f',
-              foreground: '#e0e0e0',
-              card: '#1a1a1a',
-              'card-foreground': '#e0e0e0',
-              popover: '#1a1a1a',
-              'popover-foreground': '#e0e0e0',
-              primary: '#e5b323',
-              'primary-foreground': '#0f0f0f',
-              secondary: '#252525',
-              'secondary-foreground': '#e0e0e0',
-              muted: '#111111',
-              'muted-foreground': '#888888',
-              accent: '#e5b323',
-              'accent-foreground': '#0f0f0f',
-              destructive: '#ff4444',
-              'destructive-foreground': '#e0e0e0',
-              border: '#333333',
-              input: '#333333',
-              ring: '#e5b323',
+              background: 'var(--background)',
+              foreground: 'var(--foreground)',
+              card: 'var(--card)',
+              'card-foreground': 'var(--card-foreground)',
+              popover: 'var(--popover)',
+              'popover-foreground': 'var(--popover-foreground)',
+              primary: 'var(--primary)',
+              'primary-foreground': 'var(--primary-foreground)',
+              secondary: 'var(--secondary)',
+              'secondary-foreground': 'var(--secondary-foreground)',
+              muted: 'var(--muted)',
+              'muted-foreground': 'var(--muted-foreground)',
+              accent: 'var(--accent)',
+              'accent-foreground': 'var(--accent-foreground)',
+              destructive: 'var(--destructive)',
+              'destructive-foreground': 'var(--destructive-foreground)',
+              border: 'var(--border)',
+              input: 'var(--input)',
+              ring: 'var(--ring)',
             }
           }
         }
       }
     </script>
     <style>
+      :root {
+        --background: #0f0f0f;
+        --foreground: #e0e0e0;
+        --card: #1a1a1a;
+        --card-foreground: #e0e0e0;
+        --popover: #1a1a1a;
+        --popover-foreground: #e0e0e0;
+        --primary: #e5b323;
+        --primary-foreground: #0f0f0f;
+        --secondary: #252525;
+        --secondary-foreground: #e0e0e0;
+        --muted: #111111;
+        --muted-foreground: #888888;
+        --accent: #e5b323;
+        --accent-foreground: #0f0f0f;
+        --destructive: #ff4444;
+        --destructive-foreground: #e0e0e0;
+        --border: #333333;
+        --input: #333333;
+        --ring: #e5b323;
+        --radius: 4px;
+      }
+
+      /* Global Reset for older environments */
+      *, ::before, ::after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #333333;
+      }
+      html, body {
+        background-color: #0f0f0f !important;
+        color: #e0e0e0 !important;
+      }
       body {
-        background-color: #0f0f0f;
-        color: #e0e0e0;
         margin: 0;
         padding: 0;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+      button, input, optgroup, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+        background-color: transparent !important;
+        color: inherit;
+        border: none;
+        padding: 0;
+      }
+      button, [type='button'], [type='reset'], [type='submit'] {
+        -webkit-appearance: button;
+        cursor: pointer;
       }
       #root {
         min-height: 100vh;
@@ -47,8 +94,8 @@
         flex-direction: column;
       }
     </style>
-    <script type="module" crossorigin src="/bun/assets/index-B_c4YW2g.js"></script>
-    <link rel="stylesheet" crossorigin href="/bun/assets/index-D8fuXQdR.css">
+    <script type="module" crossorigin src="/bun/assets/index-BviFbYaY.js"></script>
+    <link rel="stylesheet" crossorigin href="/bun/assets/index-DkvJxQo7.css">
   </head>
   <body>
     <div id="root"></div>
